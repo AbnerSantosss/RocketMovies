@@ -12,6 +12,7 @@ export const Container = styled.button`
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s;
+  border: none;
 
   &:disabled {
     // aqui estou me referindo quando esse botão esteja desabilitado

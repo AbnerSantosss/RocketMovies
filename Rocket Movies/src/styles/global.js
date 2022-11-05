@@ -6,9 +6,14 @@ export default createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  font-size: 62.5%;
+
+}
  body{
   font-family: 'Roboto Slab', serif;
   background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+  font-size: 1.6rem;
 
   --webkit-font-smoothing: antialiased;
 }

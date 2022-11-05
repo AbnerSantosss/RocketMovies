@@ -10,6 +10,7 @@ export default {
 
     LIGHT_BLACK: '#312E38',
 
-    BACKGROUND_100: '#1C1B1E'
+    BACKGROUND_100: '#000000',
+    BACKGROUND_200: '#0D0C0F'
   }
 }

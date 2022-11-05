@@ -5,10 +5,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  background-color: ${({ theme }) => theme.COLORS.GRAY_200};
-  color: ${({ theme }) => theme.COLORS.GRAY_100};
+  background-color: #262529;
 
   border-radius: 10px;
+  color: ${({ theme }) => theme.COLORS.WHITE};
 
   > input {
     height: 56px;
@@ -16,6 +16,7 @@ export const Container = styled.div`
     background: transparent;
     border: none;
     padding: 12px;
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
 
     > &&::placeholder {
       color: ${({ theme }) => theme.COLORS.GRAY_100};
