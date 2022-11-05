@@ -3,11 +3,23 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  margin-bottom: 58px;
 
   > main {
     width: 1137px;
     height: 222.85px;
     margin: 50px auto;
+
+    > div::-webkit-scrollbar {
+      background: rgba(255, 133, 155, 0.05);
+
+      border-radius: 20px; /* roundness of the scroll thumb */
+    }
+
+    > div::-webkit-scrollbar-thumb {
+      background: #ff859b;
+      border-radius: 8px;
+    }
   }
 `
 
@@ -56,8 +68,9 @@ export const TopMain = styled.div`
 `
 
 export const CardMovies = styled.div`
-  width: 1121px;
+  width: 1049px;
   padding: 32px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -82,4 +95,17 @@ export const CardMovies = styled.div`
     display: flex;
     gap: 8px;
   }
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 24px;
+
+  height: 357.54px;
+  overflow-y: auto;
+  padding: 30px;
+  width: 1137px;
 `
