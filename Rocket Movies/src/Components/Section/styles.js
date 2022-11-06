@@ -15,5 +15,7 @@ export const Container = styled.section`
     background: #0d0c0f;
     border-radius: 8px;
     margin-top: 2.4rem;
+    display: flex;
+    gap: 24px;
   }
 `

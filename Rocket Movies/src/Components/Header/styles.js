@@ -53,8 +53,10 @@ export const ProfileHeader = styled.div`
     }
   }
 
-  > img {
-    width: 64px;
-    border-radius: 50%;
+  > a {
+    > img {
+      width: 64px;
+      border-radius: 50%;
+    }
   }
 `

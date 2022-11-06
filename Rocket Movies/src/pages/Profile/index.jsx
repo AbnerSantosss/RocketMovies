@@ -4,14 +4,16 @@ import { Button } from '../../Components/Button'
 
 import { Container, Avatar } from './styles'
 
+import { Link } from 'react-router-dom'
+
 export function Profile() {
   return (
     <Container>
       <header>
-        <a href="#">
+        <Link to="/mymovies">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
       </header>
       <Avatar>
         <img

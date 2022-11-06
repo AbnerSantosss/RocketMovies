@@ -17,6 +17,20 @@ export const Form = styled.form`
   align-items: center;
   text-align: center;
 
+  > div:nth-child(5) {
+    margin-top: 15px;
+  }
+  > div:nth-child(6) {
+    margin-top: 15px;
+  }
+  > div:nth-child(7) {
+    margin-top: 15px;
+  }
+
+  > input {
+    margin-top: 10px;
+  }
+
   > h1 {
     font-size: 48px;
     color: ${({ theme }) => theme.COLORS.ROSE};

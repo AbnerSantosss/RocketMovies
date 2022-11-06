@@ -7,16 +7,18 @@ import { Textarea } from '../../Components/Textarea'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Container, Content } from './styles'
 
+import { Link } from 'react-router-dom'
+
 export function CreateMovie() {
   return (
     <Container>
       <Header />
 
       <div>
-        <a href="#">
+        <Link to="/mymovies">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
         <Content>
           <h1>Novo Filme</h1>
           <div>
@@ -25,7 +27,8 @@ export function CreateMovie() {
           </div>
           <Textarea placeholder="Observação" />
           <Section title="Marcadores">
-            <NoteItem value="Ação" />
+            <NoteItem value="Drama" />
+            <NoteItem isNew value="" placeholder="Novo marcador" />
           </Section>
           <div className="btn">
             <ButtonText title="Excluir filme" />

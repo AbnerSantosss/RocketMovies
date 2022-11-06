@@ -4,6 +4,8 @@ import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi'
 import { Button } from '../../Components/Button'
 import { Input } from '../../Components/input'
 
+import { Link } from 'react-router-dom'
+
 export function SingnUp() {
   return (
     <Container>
@@ -15,10 +17,10 @@ export function SingnUp() {
         <Input type="text" placeholder="E-mail" icon={FiMail} />
         <Input type="Password" placeholder="Senha" icon={FiLock} />
         <Button title="Cadastrar" />
-        <a href="#">
+        <Link to="/">
           <FiArrowLeft />
           Voltar para o login
-        </a>
+        </Link>
       </Form>
       <Background />
     </Container>

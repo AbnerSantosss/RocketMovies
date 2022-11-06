@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { Link } from 'react-router-dom'
+
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -35,36 +37,28 @@ export const TopMain = styled.div`
     line-height: 42px;
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
+`
 
-  > button {
-    width: 207px;
-    height: 48px;
-    font-size: 16px;
-    font-family: 'Roboto Slab';
+export const BtnAdd = styled(Link)`
+  width: 207px;
+  height: 48px;
+  font-size: 16px;
+  font-family: 'Roboto Slab';
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
 
-    font-weight: 500;
-    color: ${({ theme }) => theme.COLORS.LIGHT_BLACK};
-    background-color: ${({ theme }) => theme.COLORS.ROSE};
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
+  text-decoration: none;
 
-    &:disabled {
-      // aqui estou me referindo quando esse botão esteja desabilitado
-
-      opacity: 0.5;
-    }
-
-    &&:hover {
-      opacity: 0.7;
-    }
-  }
+  font-weight: 500;
+  color: ${({ theme }) => theme.COLORS.LIGHT_BLACK};
+  background-color: ${({ theme }) => theme.COLORS.ROSE};
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
 `
 
 export const CardMovies = styled.div`
@@ -78,17 +72,10 @@ export const CardMovies = styled.div`
   background: rgba(255, 133, 155, 0.05);
   border-radius: 16px;
 
-  > h1 {
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: ${({ theme }) => theme.COLORS.GREY_WHITE};
-  }
-
   > p {
     margin-bottom: 15px;
     color: ${({ theme }) => theme.COLORS.GREY};
-    line-height: 25px;
+    line-height: 29px;
   }
 
   .tagsSection {
@@ -108,4 +95,23 @@ export const Content = styled.div`
   overflow-y: auto;
   padding: 30px;
   width: 1137px;
+`
+
+export const TitleImage = styled(Link)`
+  height: 90px;
+
+  display: flex;
+  gap: 10px;
+
+  > h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: ${({ theme }) => theme.COLORS.GREY_WHITE};
+  }
+
+  > img {
+    width: 75px;
+    height: 90px;
+  }
 `

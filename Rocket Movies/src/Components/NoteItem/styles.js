@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background-color: aliceblue;
+  display: flex;
+  align-items: center;
 
   background-color: ${({ theme, isNew }) =>
-    isNew ? 'trassparent' : theme.COLORS.GREY_200};
+    isNew ? 'transparent' : theme.COLORS.GREY_200};
 
   color: ${({ theme }) => theme.COLORS.WHITE};
 
@@ -18,5 +19,24 @@ export const Container = styled.div`
   > button {
     border: none;
     background: none;
+
+    > svg {
+      color: ${({ theme }) => theme.COLORS.ROSE};
+    }
+  }
+
+  > input {
+    height: 56px;
+    width: 100%;
+
+    padding: 12px;
+
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    background: transparent;
+    border: none;
+
+    &&::placeholder {
+      color: ${({ theme }) => theme.COLORS.GREY_100};
+    }
   }
 `

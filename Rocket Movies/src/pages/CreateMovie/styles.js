@@ -24,6 +24,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   height: 800px;
+  padding: 9px;
   display: flex;
   flex-direction: column;
   gap: 40px;

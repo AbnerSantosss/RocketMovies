@@ -3,15 +3,17 @@ import { Header } from '../../Components/Header'
 import { Tag } from '../../Components/Tag'
 import { FiArrowLeft, FiStar, FiClock } from 'react-icons/fi'
 
+import { Link } from 'react-router-dom'
+
 export function MoviePreview() {
   return (
     <Container>
       <Header />
       <Content>
-        <a href="#">
+        <Link to="/mymovies">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
         <div className="title">
           <h1>Interestelar</h1>
           <div>
@@ -38,7 +40,6 @@ export function MoviePreview() {
         <div className="tags">
           <Tag title="Ficção cientifica" />
           <Tag title="Drama" />
-          <Tag title="Familia" />
         </div>
         <div className="textSection">
           <p>

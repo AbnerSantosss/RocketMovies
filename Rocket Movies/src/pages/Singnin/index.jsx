@@ -4,6 +4,8 @@ import { FiMail, FiLock } from 'react-icons/fi'
 import { Button } from '../../Components/Button'
 import { Input } from '../../Components/input'
 
+import { Link } from 'react-router-dom'
+
 export function Singnin() {
   return (
     <Container>
@@ -14,7 +16,7 @@ export function Singnin() {
         <Input type="text" placeholder="E-mail" icon={FiMail} />
         <Input type="text" placeholder="Password" icon={FiLock} />
         <Button title="Entrar" />
-        <a href="#">Criar Conta</a>
+        <Link to="/register">Criar Conta</Link>
       </Form>
       <Background />
     </Container>

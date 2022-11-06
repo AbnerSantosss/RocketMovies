@@ -16,6 +16,10 @@ export const Form = styled.form`
   align-items: center;
   text-align: center;
 
+  > div:nth-child(5) {
+    margin-top: 15px;
+  }
+
   > h1 {
     font-size: 48px;
     color: ${({ theme }) => theme.COLORS.ROSE};
